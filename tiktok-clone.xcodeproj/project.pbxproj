@@ -13,6 +13,7 @@
 		8017A6AF24C5EB0A00F83011 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8017A6AD24C5EB0A00F83011 /* Main.storyboard */; };
 		8017A6B124C5EB0E00F83011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8017A6B024C5EB0E00F83011 /* Assets.xcassets */; };
 		8017A6B424C5EB0E00F83011 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8017A6B224C5EB0E00F83011 /* LaunchScreen.storyboard */; };
+		8017A6BD24C63A0000F83011 /* tiktok-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8017A6BC24C63A0000F83011 /* tiktok-logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8017A6B024C5EB0E00F83011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8017A6B324C5EB0E00F83011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8017A6B524C5EB0E00F83011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8017A6BC24C63A0000F83011 /* tiktok-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiktok-logo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		8017A6A624C5EB0A00F83011 /* tiktok-clone */ = {
 			isa = PBXGroup;
 			children = (
+				8017A6BB24C6399C00F83011 /* Assets */,
 				8017A6A724C5EB0A00F83011 /* AppDelegate.swift */,
 				8017A6A924C5EB0A00F83011 /* SceneDelegate.swift */,
 				8017A6AB24C5EB0A00F83011 /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				8017A6B524C5EB0E00F83011 /* Info.plist */,
 			);
 			path = "tiktok-clone";
+			sourceTree = "<group>";
+		};
+		8017A6BB24C6399C00F83011 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8017A6BC24C63A0000F83011 /* tiktok-logo.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +138,7 @@
 			files = (
 				8017A6B424C5EB0E00F83011 /* LaunchScreen.storyboard in Resources */,
 				8017A6B124C5EB0E00F83011 /* Assets.xcassets in Resources */,
+				8017A6BD24C63A0000F83011 /* tiktok-logo.png in Resources */,
 				8017A6AF24C5EB0A00F83011 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
