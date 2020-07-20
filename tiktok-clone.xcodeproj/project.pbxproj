@@ -14,6 +14,10 @@
 		8017A6B124C5EB0E00F83011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8017A6B024C5EB0E00F83011 /* Assets.xcassets */; };
 		8017A6B424C5EB0E00F83011 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8017A6B224C5EB0E00F83011 /* LaunchScreen.storyboard */; };
 		8017A6BD24C63A0000F83011 /* tiktok-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8017A6BC24C63A0000F83011 /* tiktok-logo.png */; };
+		8017A6C224C6467500F83011 /* VideosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017A6C124C6467500F83011 /* VideosCollectionViewCell.swift */; };
+		8017A6C424C647A500F83011 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017A6C324C647A500F83011 /* HomeViewController.swift */; };
+		8017A6C724C64A8A00F83011 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017A6C624C64A8A00F83011 /* Video.swift */; };
+		8017A6CA24C64B4700F83011 /* VideoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017A6C924C64B4700F83011 /* VideoDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		8017A6B324C5EB0E00F83011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8017A6B524C5EB0E00F83011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8017A6BC24C63A0000F83011 /* tiktok-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiktok-logo.png"; sourceTree = "<group>"; };
+		8017A6C124C6467500F83011 /* VideosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosCollectionViewCell.swift; sourceTree = "<group>"; };
+		8017A6C324C647A500F83011 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8017A6C624C64A8A00F83011 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		8017A6C924C64B4700F83011 /* VideoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,9 @@
 		8017A6A624C5EB0A00F83011 /* tiktok-clone */ = {
 			isa = PBXGroup;
 			children = (
+				8017A6C824C64B2000F83011 /* VideoDAO */,
+				8017A6C524C64A6800F83011 /* Model */,
+				8017A6BE24C6461A00F83011 /* Videos */,
 				8017A6BB24C6399C00F83011 /* Assets */,
 				8017A6A724C5EB0A00F83011 /* AppDelegate.swift */,
 				8017A6A924C5EB0A00F83011 /* SceneDelegate.swift */,
@@ -76,6 +87,47 @@
 				8017A6BC24C63A0000F83011 /* tiktok-logo.png */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		8017A6BE24C6461A00F83011 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				8017A6C024C6463100F83011 /* View */,
+				8017A6BF24C6462800F83011 /* Controller */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		8017A6BF24C6462800F83011 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8017A6C324C647A500F83011 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8017A6C024C6463100F83011 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8017A6C124C6467500F83011 /* VideosCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8017A6C524C64A6800F83011 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8017A6C624C64A8A00F83011 /* Video.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8017A6C824C64B2000F83011 /* VideoDAO */ = {
+			isa = PBXGroup;
+			children = (
+				8017A6C924C64B4700F83011 /* VideoDAO.swift */,
+			);
+			path = VideoDAO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +202,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8017A6C424C647A500F83011 /* HomeViewController.swift in Sources */,
+				8017A6CA24C64B4700F83011 /* VideoDAO.swift in Sources */,
 				8017A6AC24C5EB0A00F83011 /* ViewController.swift in Sources */,
 				8017A6A824C5EB0A00F83011 /* AppDelegate.swift in Sources */,
+				8017A6C724C64A8A00F83011 /* Video.swift in Sources */,
+				8017A6C224C6467500F83011 /* VideosCollectionViewCell.swift in Sources */,
 				8017A6AA24C5EB0A00F83011 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
