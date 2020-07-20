@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8017A6A424C5EB0A00F83011 /* tiktok-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tiktok-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8017A6A424C5EB0A00F83011 /* TikTok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikTok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8017A6A724C5EB0A00F83011 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8017A6A924C5EB0A00F83011 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8017A6AB24C5EB0A00F83011 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		8017A6A524C5EB0A00F83011 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8017A6A424C5EB0A00F83011 /* tiktok-clone.app */,
+				8017A6A424C5EB0A00F83011 /* TikTok.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,7 +95,7 @@
 			);
 			name = "tiktok-clone";
 			productName = "tiktok-clone";
-			productReference = 8017A6A424C5EB0A00F83011 /* tiktok-clone.app */;
+			productReference = 8017A6A424C5EB0A00F83011 /* TikTok.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -303,7 +303,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.marciovcampos.tiktok-clone";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TikTok;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -320,7 +320,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.marciovcampos.tiktok-clone";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TikTok;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
