@@ -49,7 +49,7 @@
         <!--Home-->
         <scene sceneID="SOV-27-h6w">
             <objects>
-                <viewController id="9Tg-ci-Nd3" customClass="HomeViewController" customModule="TikTok" sceneMemberID="viewController">
+                <viewController id="9Tg-ci-Nd3" customClass="HomeViewController" customModule="TikTok" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cvl-TB-Tkn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,7 +64,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="celulaVideo" id="kCk-5C-ovq" customClass="VideosCollectionViewCell" customModule="TikTok">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellVideo" id="kCk-5C-ovq" customClass="HomeCollectionViewCell" customModule="TikTok" customModuleProvider="target">
                                         <rect key="frame" x="15" y="0.0" width="290" height="524"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -87,7 +87,7 @@
                                         <color key="backgroundColor" red="0.21960784310000001" green="0.71372549019999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <size key="customSize" width="290" height="524"/>
                                         <connections>
-                                            <outlet property="labelVideoPlayer" destination="b7w-YF-jjZ" id="TXZ-0J-n35"/>
+                                            <outlet property="labelVideoPlayer" destination="b7w-YF-jjZ" id="OkP-Kq-A0w"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -106,7 +106,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="C91-o8-v85"/>
                     <connections>
-                        <outlet property="homeCollectionView" destination="wiZ-NF-Uhz" id="g1V-CI-iaW"/>
+                        <outlet property="homeCollectionView" destination="wiZ-NF-Uhz" id="OcI-4P-WAb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Jp-0Q-QeZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

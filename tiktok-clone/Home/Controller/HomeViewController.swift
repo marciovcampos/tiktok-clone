@@ -30,9 +30,10 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
           }
           
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let celulaVideo = collectionView.dequeueReusableCell(withReuseIdentifier: "celulaVideo", for: indexPath) as! VideosCollectionViewCell
+        let celulaVideo = collectionView.dequeueReusableCell(withReuseIdentifier: "cellVideo", for: indexPath) as! HomeCollectionViewCell
         let videoAtual = listaVideos[indexPath.row]
         celulaVideo.labelVideoPlayer.text = videoAtual.videoUrl
+        celulaVideo.configure(with: videoAtual)
         return celulaVideo
     }
     
@@ -43,4 +44,6 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
 
 }
+
+
 
