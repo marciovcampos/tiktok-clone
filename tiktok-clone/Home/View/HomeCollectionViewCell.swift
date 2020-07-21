@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VideosCollectionViewCell: UICollectionViewCell {
+class HomeCollectionViewCell: UICollectionViewCell {
     
 
     @IBOutlet weak var labelVideoPlayer: UILabel!
