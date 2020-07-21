@@ -34,6 +34,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
         let playerView = AVPlayerLayer()
         playerView.player = player
         playerView.frame = contentView.bounds
+        playerView.videoGravity = .resizeAspectFill
         contentView.layer.addSublayer(playerView)
         player?.volume = 0
         player?.play()
