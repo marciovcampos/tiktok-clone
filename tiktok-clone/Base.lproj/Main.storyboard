@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -55,36 +54,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wiZ-NF-Uhz">
-                                <rect key="frame" x="16" y="20" width="288" height="485"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wiZ-NF-Uhz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RW4-1D-vJp">
-                                    <size key="itemSize" width="262" height="216"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RW4-1D-vJp">
+                                    <size key="itemSize" width="290" height="160"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="celulaVideo" id="kCk-5C-ovq" customClass="VideosCollectionViewCell" customModule="TikTok">
-                                        <rect key="frame" x="13" y="0.0" width="262" height="216"/>
+                                        <rect key="frame" x="15" y="0.0" width="290" height="524"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7mB-8C-z46">
-                                            <rect key="frame" x="0.0" y="0.0" width="262" height="216"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="290" height="524"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7w-YF-jjZ">
-                                                    <rect key="frame" x="0.0" y="53" width="262" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SMT-R9-gEY">
+                                                    <rect key="frame" x="20" y="20" width="216" height="20.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TESTE TESTE TESTE TESTE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7w-YF-jjZ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="216" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="b7w-YF-jjZ" firstAttribute="width" secondItem="7mB-8C-z46" secondAttribute="width" multiplier="0.160305" id="Ezl-O5-ata"/>
-                                            </constraints>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="262" height="216"/>
+                                        </view>
+                                        <color key="backgroundColor" red="0.21960784310000001" green="0.71372549019999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <size key="customSize" width="290" height="524"/>
                                         <connections>
                                             <outlet property="labelVideoPlayer" destination="b7w-YF-jjZ" id="TXZ-0J-n35"/>
                                         </connections>
@@ -93,6 +94,14 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wiZ-NF-Uhz" firstAttribute="leading" secondItem="1tb-cO-xtW" secondAttribute="leading" id="03h-Mr-CbI"/>
+                            <constraint firstItem="1tb-cO-xtW" firstAttribute="bottom" secondItem="wiZ-NF-Uhz" secondAttribute="bottom" id="E50-Ds-fsk"/>
+                            <constraint firstItem="wiZ-NF-Uhz" firstAttribute="width" secondItem="Cvl-TB-Tkn" secondAttribute="width" id="RlR-4x-5Ey"/>
+                            <constraint firstItem="wiZ-NF-Uhz" firstAttribute="top" secondItem="1tb-cO-xtW" secondAttribute="top" id="Sjh-WQ-gyH"/>
+                            <constraint firstItem="1tb-cO-xtW" firstAttribute="trailing" secondItem="wiZ-NF-Uhz" secondAttribute="trailing" id="o4U-vP-Vk2"/>
+                            <constraint firstItem="wiZ-NF-Uhz" firstAttribute="width" secondItem="Cvl-TB-Tkn" secondAttribute="width" id="ogL-Ir-7Uj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1tb-cO-xtW"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="C91-o8-v85"/>

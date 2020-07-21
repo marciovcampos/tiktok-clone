@@ -9,7 +9,7 @@
 import UIKit
 
 
-class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
+class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
 
     
     @IBOutlet weak var homeCollectionView: UICollectionView!
@@ -30,22 +30,17 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
           }
           
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-
         let celulaVideo = collectionView.dequeueReusableCell(withReuseIdentifier: "celulaVideo", for: indexPath) as! VideosCollectionViewCell
         let videoAtual = listaVideos[indexPath.row]
-        print(videoAtual.videoUrl)
         celulaVideo.labelVideoPlayer.text = videoAtual.videoUrl
         return celulaVideo
-
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-
-        return UIDevice.current.userInterfaceIdiom ==  .phone ? CGSize(width: collectionView.bounds.width/2-20, height:160) : CGSize(width: collectionView.bounds.width/3-20, height:250)
-
+        
+        let cvRect = collectionView.frame
+        return CGSize(width: cvRect.width, height: cvRect.height)
     }
 
-   
-    
-
 }
+
