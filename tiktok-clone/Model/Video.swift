@@ -12,10 +12,14 @@ class Video: NSObject {
     
     let videoUrl : String
     let caption : String
-    
-    init(videoUrl: String, caption: String){
+    let username: String
+    let audioTrackName: String
+ 
+    init(videoUrl: String, caption: String, username: String, audioTrackName: String){
         self.videoUrl = videoUrl
         self.caption = caption
+        self.username = username
+        self.audioTrackName = audioTrackName
     }
 
 }

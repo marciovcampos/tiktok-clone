@@ -14,8 +14,8 @@ class HomeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var labelVideoPlayer: UILabel!
     
     static let identifier = "cellVideo"
-    private var video: Video?
     
+    private var video: Video?
     var player: AVPlayer?
     
     override init(frame: CGRect) {
@@ -28,6 +28,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
     }
     
     public func configureVideo(){
+        
         guard let video = video else { return }
         guard let url = URL(string: video.videoUrl) else { return }
         player = AVPlayer(url: url)
