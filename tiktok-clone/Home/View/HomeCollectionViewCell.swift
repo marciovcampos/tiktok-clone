@@ -95,8 +95,36 @@ class HomeCollectionViewCell: UICollectionViewCell {
         contentView.addSubview(likeButton)
         contentView.addSubview(commentButton)
         contentView.addSubview(shareButton)
+        
+        // Add actions
+        profileButton.addTarget(self, action: #selector(didTapProfileButton), for: .touchDown)
+        likeButton.addTarget(self, action: #selector(didTapLikeButton), for: .touchDown)
+        commentButton.addTarget(self, action: #selector(didTapCommentButton), for: .touchDown)
+        shareButton.addTarget(self, action: #selector(didTapShareButton), for: .touchDown)
+       
     }
     
+    @objc private func didTapProfileButton(with: Video){
+           guard let video = video else { return }
+           delegate?.didTapProfileButton(with: video)
+       }
+    
+    @objc private func didTapLikeButton(with: Video){
+        guard let video = video else { return }
+        delegate?.didTapLikeButton(with: video)
+    }
+    
+    @objc private func didTapCommentButton(with: Video){
+          guard let video = video else { return }
+          delegate?.didTapCommentButton(with: video)
+    }
+    
+    @objc private func didTapShareButton(with: Video){
+          guard let video = video else { return }
+          delegate?.didTapShareButton(with: video)
+    }
+    
+
     override func layoutSubviews() {
         super.layoutSubviews()
     }
