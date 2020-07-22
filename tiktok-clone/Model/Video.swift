@@ -12,12 +12,10 @@ class Video: NSObject {
     
     let videoUrl : String
     let caption : String
-    let fileFormat: String
     
-    init(videoUrl: String, caption: String, fileFormat: String){
+    init(videoUrl: String, caption: String){
         self.videoUrl = videoUrl
         self.caption = caption
-        self.fileFormat = fileFormat
     }
 
 }
