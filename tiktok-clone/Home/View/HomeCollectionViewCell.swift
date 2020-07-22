@@ -49,21 +49,25 @@ class HomeCollectionViewCell: UICollectionViewCell {
     
     private let profileButton: UIButton = {
         let button = UIButton()
+        button.setBackgroundImage(UIImage(systemName: "person.circle"), for: .normal)
         return button
     }()
     
     private let likeButton: UIButton = {
         let button = UIButton()
+        button.setBackgroundImage(UIImage(systemName: "heart.fill"), for: .normal)
         return button
     }()
     
     private let commentButton: UIButton = {
         let button = UIButton()
+        button.setBackgroundImage(UIImage(systemName: "text.bubble.fill"), for: .normal)
         return button
     }()
     
     private let shareButton: UIButton = {
         let button = UIButton()
+        button.setBackgroundImage(UIImage(systemName: "phone.circle.fill"), for: .normal)
         return button
     }()
     
@@ -83,6 +87,11 @@ class HomeCollectionViewCell: UICollectionViewCell {
     public func configure(with video: Video){
         self.video = video
         configureVideo()
+        
+        //labels
+        captionLabel.text = video.caption
+        audioLabel.text = video.audioTrackName
+        usernameLabel.text = video.username
     }
     
     private func addSubviews(){
@@ -127,6 +136,23 @@ class HomeCollectionViewCell: UICollectionViewCell {
 
     override func layoutSubviews() {
         super.layoutSubviews()
+        
+        let size = contentView.frame.size.width/6
+        let width = contentView.frame.size.width
+        let heigh = contentView.frame.size.height
+        
+        //Buttons
+        profileButton.frame = CGRect(x: width-size, y: heigh-size, width: size, height: size)
+        likeButton.frame = CGRect(x: width-size, y: heigh-(size*2)-10, width: size, height: size)
+        commentButton.frame = CGRect(x: width-size, y: heigh-(size*3)-10, width: size, height: size)
+        shareButton.frame = CGRect(x: width-size, y: heigh-(size*4)-10, width: size, height: size)
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        captionLabel.text = nil
+        audioLabel.text = nil
+        usernameLabel.text = nil
     }
     
     private func configureVideo(){
