@@ -74,7 +74,23 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     override var preferredStatusBarStyle: UIStatusBarStyle {
         .lightContent
     }
-
+    
+    @IBAction func didTapProfileButton(_ sender: Any) {
+        print("profile")
+    }
+    
+    @IBAction func didTapLikeButton(_ sender: Any) {
+        print("like")
+    }
+    
+    @IBAction func didTapCommentButton(_ sender: Any) {
+        print("comment")
+    }
+    
+    @IBAction func didTapShareButton(_ sender: Any) {
+        print("share")
+    }
+    
 }
 
 

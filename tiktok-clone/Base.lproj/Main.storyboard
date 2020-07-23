@@ -81,21 +81,33 @@
                                                                     <rect key="frame" x="0.0" y="0.5" width="38" height="33"/>
                                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <state key="normal" backgroundImage="person.circle.fill" catalog="system"/>
+                                                                    <connections>
+                                                                        <action selector="didTapProfileButton:" destination="9Tg-ci-Nd3" eventType="touchUpInside" id="ruK-Nz-Prk"/>
+                                                                    </connections>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uh6-dA-qgw">
                                                                     <rect key="frame" x="0.0" y="55.5" width="38" height="31.5"/>
                                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <state key="normal" backgroundImage="heart.fill" catalog="system"/>
+                                                                    <connections>
+                                                                        <action selector="didTapLikeButton:" destination="9Tg-ci-Nd3" eventType="touchUpInside" id="Lvb-XJ-Umh"/>
+                                                                    </connections>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlA-jT-fBA">
                                                                     <rect key="frame" x="0.0" y="108" width="38" height="33.5"/>
                                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <state key="normal" backgroundImage="message.fill" catalog="system"/>
+                                                                    <connections>
+                                                                        <action selector="didTapCommentButton:" destination="9Tg-ci-Nd3" eventType="touchUpInside" id="1ud-aY-cVd"/>
+                                                                    </connections>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAk-hp-YZT">
                                                                     <rect key="frame" x="0.0" y="162.5" width="38" height="33"/>
                                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <state key="normal" backgroundImage="phone.circle.fill" catalog="system"/>
+                                                                    <connections>
+                                                                        <action selector="didTapShareButton:" destination="9Tg-ci-Nd3" eventType="touchUpInside" id="ufa-Bf-e3u"/>
+                                                                    </connections>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAE-sA-LX1">
                                                                     <rect key="frame" x="0.0" y="217" width="38" height="32.5"/>
