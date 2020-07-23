@@ -18,8 +18,11 @@ protocol HomeCollectionViewCellDelegate: AnyObject {
 
 class HomeCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var labelVideoPlayer: UILabel!
     @IBOutlet weak var videoContainer: UIView!
+    
+    @IBOutlet weak var labelUsername: UILabel!
+    @IBOutlet weak var labelCaption: UILabel!
+    @IBOutlet weak var labelAudioTrack: UILabel!
     
     static let identifier = "cellVideo"
     
@@ -88,6 +91,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
     public func configure(with video: Video){
         self.video = video
         configureVideo()
+        configureVideoInfo()
         
         //labels
         captionLabel.text = video.caption
@@ -170,6 +174,13 @@ class HomeCollectionViewCell: UICollectionViewCell {
         
         player?.volume = 0
         player?.play()
+    }
+    
+    private func configureVideoInfo(){
+        guard let video = video else { return }
+        labelUsername.text = video.username
+        labelCaption.text = video.caption
+        labelAudioTrack.text = video.audioTrackName
     }
     
     required init?(coder: NSCoder) {
