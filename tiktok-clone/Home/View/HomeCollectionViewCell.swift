@@ -23,6 +23,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var labelUsername: UILabel!
     @IBOutlet weak var labelCaption: UILabel!
     @IBOutlet weak var labelAudioTrack: UILabel!
+    @IBOutlet weak var stackViewButtons: UIStackView!
     
     static let identifier = "cellVideo"
     
@@ -166,6 +167,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
         playerView.videoGravity = .resizeAspectFill
         videoContainer.layer.addSublayer(playerView)
         videoContainer.layer.zPosition = -1
+        stackViewButtons.layer.zPosition = 1
         
         player?.volume = 0
         player?.play()
