@@ -40,7 +40,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let cvRect = collectionView.frame
+        let cvRect = view.frame
         return CGSize(width: cvRect.width, height: cvRect.height)
     }
     
@@ -67,7 +67,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
        
      } else {
          let statusBar = UIApplication.shared.value(forKeyPath: "statusBarWindow.statusBar") as? UIView
-         statusBar?.backgroundColor = UIColor.red
+         statusBar?.backgroundColor = UIColor.black
      }
     }
       

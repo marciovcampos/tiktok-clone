@@ -26,6 +26,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+//        clean()
     }
     
     public func configure(with video: Video){
@@ -36,9 +37,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        labelUsername.text = nil
-        labelCaption.text = nil
-        labelAudioTrack.text = nil
+        //clean()
     }
     
     private func configureVideo(){
@@ -48,14 +47,20 @@ class HomeCollectionViewCell: UICollectionViewCell {
         player = AVPlayer(url: URL(fileURLWithPath: path))
         let playerView = AVPlayerLayer()
         playerView.player = player
-        playerView.frame = contentView.bounds
+        playerView.frame = bounds
         playerView.videoGravity = .resizeAspectFill
         videoContainer.layer.addSublayer(playerView)
-        videoContainer.layer.zPosition = -1
-        stackViewButtons.layer.zPosition = 1
         
         player?.volume = 0
         player?.play()
+    }
+    
+    func clean(){
+        labelUsername.text = nil
+        labelCaption.text = nil
+        labelAudioTrack.text = nil
+        video = nil
+        videoContainer.layer.sublayers?.forEach { $0.removeFromSuperlayer() }
     }
     
     private func configureVideoInfo(){
