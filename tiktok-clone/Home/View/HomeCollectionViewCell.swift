@@ -92,11 +92,6 @@ class HomeCollectionViewCell: UICollectionViewCell {
         self.video = video
         configureVideo()
         configureVideoInfo()
-        
-        //labels
-        captionLabel.text = video.caption
-        audioLabel.text = video.audioTrackName
-        usernameLabel.text = video.username
     }
     
     private func addSubviews(){
