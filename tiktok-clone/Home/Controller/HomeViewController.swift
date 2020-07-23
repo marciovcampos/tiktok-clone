@@ -47,6 +47,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     // Change Status Bar Color
     
     override func viewDidAppear(_ animated: Bool) {
+        
      if #available(iOS 13.0, *) {
          let app = UIApplication.shared
          let statusBarHeight: CGFloat = app.statusBarFrame.size.height

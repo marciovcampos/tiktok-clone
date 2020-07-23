@@ -192,7 +192,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1tb-cO-xtW"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="C91-o8-v85"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home.png" id="C91-o8-v85"/>
                     <connections>
                         <outlet property="homeCollectionView" destination="wiZ-NF-Uhz" id="OcI-4P-WAb"/>
                     </connections>
@@ -220,7 +220,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="16P-qL-Tev"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Discover" image="magnifyingglass" catalog="system" id="TE8-g5-sG5"/>
+                    <tabBarItem key="tabBarItem" title="Discover" image="search.png" id="TE8-g5-sG5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4gS-Bl-TLp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -245,7 +245,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="66Q-t5-jNh"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Me" image="person" catalog="system" id="Jnd-90-ifj"/>
+                    <tabBarItem key="tabBarItem" title="Me" image="profile.png" id="Jnd-90-ifj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qoM-au-hOW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -270,7 +270,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="uth-yW-Dy4"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Inbox" image="ellipses.bubble" catalog="system" id="9lx-ts-2MD"/>
+                    <tabBarItem key="tabBarItem" title="Inbox" image="comment.png" id="9lx-ts-2MD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8bd-rA-pxA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -295,7 +295,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="1os-Jn-aRC"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="plus.rectangle.fill" catalog="system" id="BqO-yv-o40"/>
+                    <tabBarItem key="tabBarItem" title="" image="camera.png" id="BqO-yv-o40">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-3"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ziu-XL-sui" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -303,16 +305,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera.png" width="37.5" height="25"/>
         <image name="circle.righthalf.fill" catalog="system" width="128" height="121"/>
-        <image name="ellipses.bubble" catalog="system" width="128" height="110"/>
+        <image name="comment.png" width="24.5" height="25"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
-        <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="home.png" width="27.5" height="25"/>
         <image name="message.fill" catalog="system" width="128" height="113"/>
         <image name="music.note" catalog="system" width="97" height="128"/>
-        <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="phone.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="plus.rectangle.fill" catalog="system" width="128" height="93"/>
+        <image name="profile.png" width="21.5" height="25"/>
+        <image name="search.png" width="25" height="25"/>
     </resources>
 </document>
