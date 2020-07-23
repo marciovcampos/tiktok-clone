@@ -10,13 +10,15 @@ import UIKit
 
 class Video: NSObject {
     
-    let videoUrl : String
+    let url : String
+    let format: String
     let caption : String
     let username: String
     let audioTrackName: String
  
-    init(videoUrl: String, caption: String, username: String, audioTrackName: String){
-        self.videoUrl = videoUrl
+    init(videoUrl: String, format: String, caption: String, username: String, audioTrackName: String){
+        self.url = videoUrl
+        self.format = format
         self.caption = caption
         self.username = username
         self.audioTrackName = audioTrackName

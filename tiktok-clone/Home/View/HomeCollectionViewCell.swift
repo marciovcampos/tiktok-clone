@@ -158,8 +158,8 @@ class HomeCollectionViewCell: UICollectionViewCell {
     private func configureVideo(){
         
         guard let video = video else { return }
-        guard let url = URL(string: video.videoUrl) else { return }
-        player = AVPlayer(url: url)
+        guard let path = Bundle.main.path(forResource: video.url, ofType: video.format) else { return }
+        player = AVPlayer(url: URL(fileURLWithPath: path))
         let playerView = AVPlayerLayer()
         playerView.player = player
         playerView.frame = contentView.bounds

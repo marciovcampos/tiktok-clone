@@ -17,6 +17,8 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     let listaComTodosVideos: Array<Video> = VideoDAO().returnAllVideos()
     var listaVideos: Array<Video> = []
     
+    private var collectionView: UICollectionView?
+    
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +34,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let celulaVideo = collectionView.dequeueReusableCell(withReuseIdentifier: "cellVideo", for: indexPath) as! HomeCollectionViewCell
         let videoAtual = listaVideos[indexPath.row]
-        celulaVideo.labelVideoPlayer.text = videoAtual.videoUrl
+        celulaVideo.labelVideoPlayer.text = videoAtual.url
         celulaVideo.configure(with: videoAtual)
         return celulaVideo
     }
