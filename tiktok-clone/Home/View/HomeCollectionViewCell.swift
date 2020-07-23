@@ -19,6 +19,7 @@ protocol HomeCollectionViewCellDelegate: AnyObject {
 class HomeCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var labelVideoPlayer: UILabel!
+    @IBOutlet weak var videoContainer: UIView!
     
     static let identifier = "cellVideo"
     
@@ -164,7 +165,9 @@ class HomeCollectionViewCell: UICollectionViewCell {
         playerView.player = player
         playerView.frame = contentView.bounds
         playerView.videoGravity = .resizeAspectFill
-        contentView.layer.addSublayer(playerView)
+        videoContainer.layer.addSublayer(playerView)
+        videoContainer.layer.zPosition = -1
+        
         player?.volume = 0
         player?.play()
     }

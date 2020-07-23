@@ -71,23 +71,29 @@
                                             <rect key="frame" x="0.0" y="0.0" width="290" height="524"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SMT-R9-gEY">
-                                                    <rect key="frame" x="20" y="20" width="216" height="20.5"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TESTE TESTE TESTE TESTE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7w-YF-jjZ">
-                                                            <rect key="frame" x="0.0" y="0.0" width="216" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JFr-ya-scY">
+                                                    <rect key="frame" x="0.0" y="0.0" width="290" height="524"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TESTE TESTE TESTE TESTE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7w-YF-jjZ">
+                                                    <rect key="frame" x="37" y="251" width="216" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="JFr-ya-scY" secondAttribute="trailing" id="78t-jH-6C2"/>
+                                            <constraint firstItem="JFr-ya-scY" firstAttribute="leading" secondItem="kCk-5C-ovq" secondAttribute="leading" id="8aS-9B-ciI"/>
+                                            <constraint firstAttribute="bottom" secondItem="JFr-ya-scY" secondAttribute="bottom" id="gNZ-5u-wD0"/>
+                                            <constraint firstItem="JFr-ya-scY" firstAttribute="top" secondItem="kCk-5C-ovq" secondAttribute="top" id="vQO-WH-7WD"/>
+                                        </constraints>
                                         <size key="customSize" width="290" height="524"/>
                                         <connections>
                                             <outlet property="labelVideoPlayer" destination="b7w-YF-jjZ" id="OkP-Kq-A0w"/>
+                                            <outlet property="videoContainer" destination="JFr-ya-scY" id="K05-bs-T2G"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
