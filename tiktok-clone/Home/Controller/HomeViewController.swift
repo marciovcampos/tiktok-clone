@@ -39,9 +39,8 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
         let cvRect = view.frame
-        return CGSize(width: cvRect.width, height: cvRect.height)
+        return CGSize(width: cvRect.width, height: view.safeAreaLayoutGuide.layoutFrame.size.height)
     }
     
     // Change Status Bar Color
