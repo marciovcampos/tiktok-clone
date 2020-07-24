@@ -74,11 +74,14 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JFr-ya-scY">
                                                     <rect key="frame" x="0.0" y="0.0" width="290" height="524"/>
                                                 </view>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xmC-6s-Aml">
-                                                    <rect key="frame" x="239" y="256" width="38" height="250"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xmC-6s-Aml">
+                                                    <rect key="frame" x="239" y="230" width="38" height="276"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yiw-OF-IY0">
-                                                            <rect key="frame" x="0.0" y="0.5" width="38" height="33"/>
+                                                            <rect key="frame" x="0.0" y="0.5" width="38" height="34"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="35" id="yLR-ZP-i2r"/>
+                                                            </constraints>
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <state key="normal" backgroundImage="person.circle.fill" catalog="system"/>
                                                             <connections>
@@ -86,7 +89,10 @@
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uh6-dA-qgw">
-                                                            <rect key="frame" x="0.0" y="55.5" width="38" height="31.5"/>
+                                                            <rect key="frame" x="0.0" y="56.5" width="38" height="32.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="35" id="l64-Y1-oOc"/>
+                                                            </constraints>
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <state key="normal" backgroundImage="heart.fill" catalog="system"/>
                                                             <connections>
@@ -94,7 +100,10 @@
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlA-jT-fBA">
-                                                            <rect key="frame" x="0.0" y="108" width="38" height="33.5"/>
+                                                            <rect key="frame" x="0.0" y="110" width="38" height="34.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="35" id="DVy-sM-nzE"/>
+                                                            </constraints>
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <state key="normal" backgroundImage="message.fill" catalog="system"/>
                                                             <connections>
@@ -102,22 +111,36 @@
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAk-hp-YZT">
-                                                            <rect key="frame" x="0.0" y="162.5" width="38" height="33"/>
+                                                            <rect key="frame" x="0.0" y="165.5" width="38" height="34"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="35" id="R5o-iL-Pme"/>
+                                                            </constraints>
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <state key="normal" backgroundImage="phone.circle.fill" catalog="system"/>
                                                             <connections>
                                                                 <action selector="didTapShareButton:" destination="9Tg-ci-Nd3" eventType="touchUpInside" id="ufa-Bf-e3u"/>
                                                             </connections>
                                                         </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltU-qF-W5G">
+                                                            <rect key="frame" x="0.0" y="220" width="38" height="1"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="Pb3-FG-GaG"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAE-sA-LX1">
-                                                            <rect key="frame" x="0.0" y="217" width="38" height="32.5"/>
+                                                            <rect key="frame" x="0.0" y="242" width="38" height="33.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="35" id="m1U-sI-diA"/>
+                                                            </constraints>
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <state key="normal" backgroundImage="circle.righthalf.fill" catalog="system"/>
                                                         </button>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="38" id="FcF-yJ-CAB"/>
-                                                        <constraint firstAttribute="height" constant="250" id="YHn-Y3-Euz"/>
                                                     </constraints>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YZr-NH-18P">
