@@ -28,6 +28,8 @@
 		80599B4824C9C136000DEE61 /* video8.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 80599B4724C9C136000DEE61 /* video8.mp4 */; };
 		80599B4A24C9C13F000DEE61 /* video9.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 80599B4924C9C13E000DEE61 /* video9.mp4 */; };
 		80599B4C24C9C146000DEE61 /* video10.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 80599B4B24C9C146000DEE61 /* video10.mp4 */; };
+		80F7338624CB1F950095AF67 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F7338524CB1F950095AF67 /* CameraViewController.swift */; };
+		80F7338C24CB22E70095AF67 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7338B24CB22E70095AF67 /* error.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		80599B4724C9C136000DEE61 /* video8.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video8.mp4; sourceTree = "<group>"; };
 		80599B4924C9C13E000DEE61 /* video9.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video9.mp4; sourceTree = "<group>"; };
 		80599B4B24C9C146000DEE61 /* video10.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video10.mp4; sourceTree = "<group>"; };
+		80F7338524CB1F950095AF67 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		80F7338B24CB22E70095AF67 /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = error.png; path = ../../../../../error.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 				8017A6C824C64B2000F83011 /* VideoDAO */,
 				8017A6C524C64A6800F83011 /* Model */,
 				8017A6BE24C6461A00F83011 /* Home */,
+				80F7338324CB1F670095AF67 /* Camera */,
 				8017A6BB24C6399C00F83011 /* Assets */,
 				8017A6A724C5EB0A00F83011 /* AppDelegate.swift */,
 				8017A6A924C5EB0A00F83011 /* SceneDelegate.swift */,
@@ -106,6 +111,7 @@
 			children = (
 				80599B3824C9BF59000DEE61 /* Videos */,
 				8017A6BC24C63A0000F83011 /* tiktok-logo.png */,
+				80F7338B24CB22E70095AF67 /* error.png */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -166,6 +172,22 @@
 				80599B4B24C9C146000DEE61 /* video10.mp4 */,
 			);
 			path = Videos;
+			sourceTree = "<group>";
+		};
+		80F7338324CB1F670095AF67 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				80F7338424CB1F790095AF67 /* Controller */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		80F7338424CB1F790095AF67 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				80F7338524CB1F950095AF67 /* CameraViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +259,7 @@
 				80599B4A24C9C13F000DEE61 /* video9.mp4 in Resources */,
 				80599B4824C9C136000DEE61 /* video8.mp4 in Resources */,
 				8017A6AF24C5EB0A00F83011 /* Main.storyboard in Resources */,
+				80F7338C24CB22E70095AF67 /* error.png in Resources */,
 				80599B4424C9C127000DEE61 /* video6.mp4 in Resources */,
 				80599B4C24C9C146000DEE61 /* video10.mp4 in Resources */,
 				80599B3E24C9C110000DEE61 /* video3.mp4 in Resources */,
@@ -255,6 +278,7 @@
 				8017A6AC24C5EB0A00F83011 /* ViewController.swift in Sources */,
 				8017A6A824C5EB0A00F83011 /* AppDelegate.swift in Sources */,
 				8017A6C724C64A8A00F83011 /* Video.swift in Sources */,
+				80F7338624CB1F950095AF67 /* CameraViewController.swift in Sources */,
 				8017A6C224C6467500F83011 /* HomeCollectionViewCell.swift in Sources */,
 				8017A6AA24C5EB0A00F83011 /* SceneDelegate.swift in Sources */,
 			);
