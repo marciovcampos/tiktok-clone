@@ -16,9 +16,6 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     let listaComTodosVideos: Array<Video> = VideoDAO().returnAllVideos()
     var listaVideos: Array<Video> = []
-    
-    private var collectionView: UICollectionView?
-    
   
     override func viewDidLoad() {
         super.viewDidLoad()

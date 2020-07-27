@@ -18,6 +18,8 @@
 		8017A6C424C647A500F83011 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017A6C324C647A500F83011 /* HomeViewController.swift */; };
 		8017A6C724C64A8A00F83011 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017A6C624C64A8A00F83011 /* Video.swift */; };
 		8017A6CA24C64B4700F83011 /* VideoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017A6C924C64B4700F83011 /* VideoDAO.swift */; };
+		8045BBAD24CF157A0033D4D1 /* InboxCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8045BBAC24CF157A0033D4D1 /* InboxCollectionViewCell.swift */; };
+		8045BBB024CF19250033D4D1 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8045BBAF24CF19250033D4D1 /* InboxViewController.swift */; };
 		80599B3A24C9BF7A000DEE61 /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 80599B3924C9BF7A000DEE61 /* video1.mp4 */; };
 		80599B3C24C9C106000DEE61 /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 80599B3B24C9C106000DEE61 /* video2.mp4 */; };
 		80599B3E24C9C110000DEE61 /* video3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 80599B3D24C9C110000DEE61 /* video3.mp4 */; };
@@ -46,6 +48,8 @@
 		8017A6C324C647A500F83011 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8017A6C624C64A8A00F83011 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		8017A6C924C64B4700F83011 /* VideoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDAO.swift; sourceTree = "<group>"; };
+		8045BBAC24CF157A0033D4D1 /* InboxCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxCollectionViewCell.swift; sourceTree = "<group>"; };
+		8045BBAF24CF19250033D4D1 /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
 		80599B3924C9BF7A000DEE61 /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
 		80599B3B24C9C106000DEE61 /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
 		80599B3D24C9C110000DEE61 /* video3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video3.mp4; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 		8017A6A624C5EB0A00F83011 /* tiktok-clone */ = {
 			isa = PBXGroup;
 			children = (
+				8045BBAA24CF152B0033D4D1 /* Inbox */,
 				8017A6C824C64B2000F83011 /* VideoDAO */,
 				8017A6C524C64A6800F83011 /* Model */,
 				8017A6BE24C6461A00F83011 /* Home */,
@@ -155,6 +160,31 @@
 				8017A6C924C64B4700F83011 /* VideoDAO.swift */,
 			);
 			path = VideoDAO;
+			sourceTree = "<group>";
+		};
+		8045BBAA24CF152B0033D4D1 /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				8045BBAB24CF15400033D4D1 /* View */,
+				8045BBAE24CF190B0033D4D1 /* Controller */,
+			);
+			path = Inbox;
+			sourceTree = "<group>";
+		};
+		8045BBAB24CF15400033D4D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8045BBAC24CF157A0033D4D1 /* InboxCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8045BBAE24CF190B0033D4D1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8045BBAF24CF19250033D4D1 /* InboxViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		80599B3824C9BF59000DEE61 /* Videos */ = {
@@ -274,9 +304,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8017A6C424C647A500F83011 /* HomeViewController.swift in Sources */,
+				8045BBAD24CF157A0033D4D1 /* InboxCollectionViewCell.swift in Sources */,
 				8017A6CA24C64B4700F83011 /* VideoDAO.swift in Sources */,
 				8017A6AC24C5EB0A00F83011 /* ViewController.swift in Sources */,
 				8017A6A824C5EB0A00F83011 /* AppDelegate.swift in Sources */,
+				8045BBB024CF19250033D4D1 /* InboxViewController.swift in Sources */,
 				8017A6C724C64A8A00F83011 /* Video.swift in Sources */,
 				80F7338624CB1F950095AF67 /* CameraViewController.swift in Sources */,
 				8017A6C224C6467500F83011 /* HomeCollectionViewCell.swift in Sources */,

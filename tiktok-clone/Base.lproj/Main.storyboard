@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -277,27 +278,77 @@
         <!--Inbox-->
         <scene sceneID="O7P-EI-ijc">
             <objects>
-                <viewController id="W3J-SS-Ska" sceneMemberID="viewController">
+                <viewController id="W3J-SS-Ska" customClass="InboxViewController" customModule="TikTok" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cYK-WG-gnR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="INBOX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTc-gm-A7v">
-                                <rect key="frame" x="139" y="123" width="51" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DLL-2G-N8B">
+                                <rect key="frame" x="10" y="10" width="300" height="509"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UKl-iX-Lxp">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="22"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All activity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTc-gm-A7v" userLabel="All Activity">
+                                                <rect key="frame" x="0.0" y="0.0" width="270" height="22"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tg8-ua-cZA">
+                                                <rect key="frame" x="270" y="0.5" width="30" height="21.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="11R-kH-cIA"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.065930463369999998" green="0.065946869549999995" blue="0.065926887089999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" backgroundImage="paperplane" catalog="system"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PxB-LR-iQC">
+                                        <rect key="frame" x="0.0" y="22" width="300" height="487"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aLk-3a-zFu">
+                                            <size key="itemSize" width="300" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellActivity" id="J0w-M4-kNC" customClass="InboxCollectionViewCell" customModule="TikTok" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7BT-if-vyP">
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionViewCellContentView>
+                                                <size key="customSize" width="300" height="128"/>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="PxB-LR-iQC" firstAttribute="width" secondItem="DLL-2G-N8B" secondAttribute="width" id="TYj-ms-oef"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DLL-2G-N8B" firstAttribute="top" secondItem="uth-yW-Dy4" secondAttribute="top" constant="10" id="5NQ-Pa-ycp"/>
+                            <constraint firstItem="uth-yW-Dy4" firstAttribute="trailing" secondItem="DLL-2G-N8B" secondAttribute="trailing" constant="10" id="Xpf-Vc-aCS"/>
+                            <constraint firstItem="DLL-2G-N8B" firstAttribute="leading" secondItem="uth-yW-Dy4" secondAttribute="leading" constant="10" id="ZWd-0o-0kq"/>
+                            <constraint firstItem="uth-yW-Dy4" firstAttribute="bottom" secondItem="DLL-2G-N8B" secondAttribute="bottom" id="ypr-m4-BL1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uth-yW-Dy4"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Inbox" image="comment.png" id="9lx-ts-2MD"/>
+                    <connections>
+                        <outlet property="activityCollectionView" destination="PxB-LR-iQC" id="LV9-VE-a03"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8bd-rA-pxA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="300" y="-224"/>
+            <point key="canvasLocation" x="300" y="-225"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="jt3-oD-UcR">
@@ -350,6 +401,7 @@
         <image name="home.png" width="27.5" height="25"/>
         <image name="message.fill" catalog="system" width="128" height="113"/>
         <image name="music.note" catalog="system" width="97" height="128"/>
+        <image name="paperplane" catalog="system" width="128" height="121"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="phone.circle.fill" catalog="system" width="128" height="121"/>
         <image name="profile.png" width="21.5" height="25"/>
