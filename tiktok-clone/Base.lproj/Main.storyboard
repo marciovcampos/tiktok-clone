@@ -321,8 +321,47 @@
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7BT-if-vyP">
                                                     <rect key="frame" x="0.0" y="0.0" width="300" height="128"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kYy-4A-czC">
+                                                            <rect key="frame" x="0.0" y="0.0" width="300" height="128"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FT6-Z6-720">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="128"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="50" id="wFw-cm-AY1"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Wy-Co-hiO">
+                                                                    <rect key="frame" x="50" y="0.0" width="200" height="128"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9xz-hG-vBL">
+                                                                    <rect key="frame" x="250" y="0.0" width="50" height="128"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="50" id="sK8-S8-X3f"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="100" id="n5Z-hq-ekn"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="kYy-4A-czC" firstAttribute="leading" secondItem="7BT-if-vyP" secondAttribute="leading" id="5Qx-Ek-ScC"/>
+                                                        <constraint firstItem="kYy-4A-czC" firstAttribute="top" secondItem="7BT-if-vyP" secondAttribute="top" id="JXx-CK-Wi9"/>
+                                                        <constraint firstAttribute="trailing" secondItem="kYy-4A-czC" secondAttribute="trailing" id="h2q-VB-OJ5"/>
+                                                        <constraint firstAttribute="bottom" secondItem="kYy-4A-czC" secondAttribute="bottom" id="iZb-Ss-78c"/>
+                                                    </constraints>
                                                 </collectionViewCellContentView>
                                                 <size key="customSize" width="300" height="128"/>
+                                                <connections>
+                                                    <outlet property="activityLabel" destination="7Wy-Co-hiO" id="fmn-c0-ZSH"/>
+                                                    <outlet property="userImageView" destination="FT6-Z6-720" id="ot1-za-Gxr"/>
+                                                    <outlet property="videoImagemView" destination="9xz-hG-vBL" id="6AA-jJ-mkr"/>
+                                                </connections>
                                             </collectionViewCell>
                                         </cells>
                                     </collectionView>
