@@ -24,7 +24,7 @@ class ActivityDAO: NSObject {
         let activity10 = Activity(username: "User 10", userNameImage: "user10.png", type: "like", label: "liked your video", videoImage: "video10", videoFormat: "mp4")
 
            
-        let activityList: Array<Activity> = [activity1, activity2, activity3, activity4, activity5, activity6, activity7, activity8, activity9, activity10]
+        let activityList: Array<Activity> = [activity1, activity2, activity3, activity4, activity5, activity6, activity7, activity8, activity9, activity10, activity1, activity2, activity3, activity4, activity5, activity6, activity7, activity8, activity9, activity10]
 
         return activityList
         
