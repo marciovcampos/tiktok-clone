@@ -16,13 +16,15 @@ class Activity: NSObject {
     let type: String
     let label : String
     let videoImage: String
+    let videoFormat: String
 
-    init(username: String, userNameImage: String, type: String, label: String, videoImage: String){
+    init(username: String, userNameImage: String, type: String, label: String, videoImage: String, videoFormat: String){
         self.username = username
         self.userNameImage = userNameImage
         self.type = type
         self.label = label
         self.videoImage = videoImage
+        self.videoFormat = videoFormat        
     }
 
 }
