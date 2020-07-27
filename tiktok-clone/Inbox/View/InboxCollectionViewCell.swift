@@ -51,16 +51,5 @@ class InboxCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    public func setRegualAndBoldText(regualText: String,
-                                       boldiText: String) {
-
-        let attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: font.pointSize)]
-        let regularString = NSMutableAttributedString(string: regualText)
-        let boldiString = NSMutableAttributedString(string: boldiText, attributes:attrs)
-        regularString.append(boldiString)
-        attributedText = regularString
-    }
-    
-    
     
 }
