@@ -231,6 +231,9 @@
                                             <outlet property="discoIcon" destination="EAE-sA-LX1" id="NV1-Zk-2Hh"/>
                                             <outlet property="labelAudioTrack" destination="MtY-2H-sHK" id="O6v-D0-bmo"/>
                                             <outlet property="labelCaption" destination="bN5-JQ-zif" id="1ov-8F-Hzs"/>
+                                            <outlet property="labelCommentsNumber" destination="TAF-jV-X52" id="qjZ-3I-TbE"/>
+                                            <outlet property="labelLikesNumber" destination="kUU-y2-D1J" id="1nR-0L-bNW"/>
+                                            <outlet property="labelShareNumber" destination="NsU-on-EQd" id="fpu-of-ODt"/>
                                             <outlet property="labelUsername" destination="N8v-ha-qds" id="ZW5-nx-zZv"/>
                                             <outlet property="stackViewButtons" destination="xmC-6s-Aml" id="80k-Pf-6x1"/>
                                             <outlet property="videoContainer" destination="JFr-ya-scY" id="K05-bs-T2G"/>
