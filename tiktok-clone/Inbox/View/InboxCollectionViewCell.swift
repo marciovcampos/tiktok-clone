@@ -20,8 +20,7 @@ class InboxCollectionViewCell: UICollectionViewCell {
     public func configure(with activity: Activity){
         
         self.activity = activity
-        
-        self.activityLabel.text =  "\(activity.username) \(activity.label)"
+        self.activityLabel.attributedText = formatString(userName: activity.username, label: activity.label)
         self.userImageView.image = UIImage(named: activity.userNameImage)
         makeRounded()
         guard let path = Bundle.main.path(forResource: activity.videoImage, ofType: "mp4") else { return }
@@ -30,14 +29,14 @@ class InboxCollectionViewCell: UICollectionViewCell {
    
     }
     
-    func makeRounded() {
+    private func makeRounded() {
         userImageView?.layer.cornerRadius = (userImageView?.frame.size.width ?? 0.0) / 2
         userImageView?.clipsToBounds = true
         userImageView?.layer.borderWidth = 2.0
         userImageView?.layer.borderColor = UIColor.black.cgColor
     }
     
-   func generateThumbnail(path: URL) -> UIImage? {
+   private func generateThumbnail(path: URL) -> UIImage? {
         do {
             let asset = AVURLAsset(url: path, options: nil)
             let imgGenerator = AVAssetImageGenerator(asset: asset)
@@ -51,5 +50,18 @@ class InboxCollectionViewCell: UICollectionViewCell {
         }
     }
     
+    private func formatString (userName: String, label: String) -> NSAttributedString {
+
+        let font = UIFont.systemFont(ofSize: 16)
+        let firstAttributes = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: font.pointSize)]
+        let secondAttributes = [NSAttributedString.Key.foregroundColor: UIColor.darkGray]
+        
+        let firstString = NSMutableAttributedString(string: "\(userName) ", attributes: firstAttributes)
+        let secondString = NSAttributedString(string: label, attributes: secondAttributes)
+        
+        firstString.append(secondString)
+       
+        return firstString
+    }
     
 }
