@@ -76,10 +76,10 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="290" height="524"/>
                                                 </view>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xmC-6s-Aml">
-                                                    <rect key="frame" x="239" y="230" width="38" height="276"/>
+                                                    <rect key="frame" x="242" y="183.5" width="35" height="322.5"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yiw-OF-IY0">
-                                                            <rect key="frame" x="0.0" y="0.5" width="38" height="34"/>
+                                                            <rect key="frame" x="0.0" y="0.5" width="35" height="34"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="35" id="yLR-ZP-i2r"/>
                                                             </constraints>
@@ -89,41 +89,74 @@
                                                                 <action selector="didTapProfileButton:" destination="9Tg-ci-Nd3" eventType="touchUpInside" id="ruK-Nz-Prk"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uh6-dA-qgw">
-                                                            <rect key="frame" x="0.0" y="56.5" width="38" height="32.5"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="35" id="l64-Y1-oOc"/>
-                                                            </constraints>
-                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <state key="normal" backgroundImage="heart.fill" catalog="system"/>
-                                                            <connections>
-                                                                <action selector="didTapLikeButton:" destination="9Tg-ci-Nd3" eventType="touchUpInside" id="Lvb-XJ-Umh"/>
-                                                            </connections>
-                                                        </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlA-jT-fBA">
-                                                            <rect key="frame" x="0.0" y="110" width="38" height="34.5"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="35" id="DVy-sM-nzE"/>
-                                                            </constraints>
-                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <state key="normal" backgroundImage="message.fill" catalog="system"/>
-                                                            <connections>
-                                                                <action selector="didTapCommentButton:" destination="9Tg-ci-Nd3" eventType="touchUpInside" id="1ud-aY-cVd"/>
-                                                            </connections>
-                                                        </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAk-hp-YZT">
-                                                            <rect key="frame" x="0.0" y="165" width="38" height="35"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="35" id="R5o-iL-Pme"/>
-                                                            </constraints>
-                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <state key="normal" backgroundImage="whatsapp"/>
-                                                            <connections>
-                                                                <action selector="didTapShareButton:" destination="9Tg-ci-Nd3" eventType="touchUpInside" id="ufa-Bf-e3u"/>
-                                                            </connections>
-                                                        </button>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IeT-iE-SgT">
+                                                            <rect key="frame" x="0.0" y="55" width="35" height="50.5"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uh6-dA-qgw">
+                                                                    <rect key="frame" x="0.0" y="1.5" width="35" height="32.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="35" id="l64-Y1-oOc"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <state key="normal" backgroundImage="heart.fill" catalog="system"/>
+                                                                    <connections>
+                                                                        <action selector="didTapLikeButton:" destination="9Tg-ci-Nd3" eventType="touchUpInside" id="Lvb-XJ-Umh"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="26.4k" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUU-y2-D1J">
+                                                                    <rect key="frame" x="0.0" y="35" width="35" height="15.5"/>
+                                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="11"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kox-eY-Iqc">
+                                                            <rect key="frame" x="0.0" y="125.5" width="35" height="50.5"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlA-jT-fBA">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="35" height="34.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="35" id="DVy-sM-nzE"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <state key="normal" backgroundImage="message.fill" catalog="system"/>
+                                                                    <connections>
+                                                                        <action selector="didTapCommentButton:" destination="9Tg-ci-Nd3" eventType="touchUpInside" id="1ud-aY-cVd"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="387" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAF-jV-X52">
+                                                                    <rect key="frame" x="0.0" y="35" width="35" height="15.5"/>
+                                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="11"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LxE-P3-5xY">
+                                                            <rect key="frame" x="0.0" y="196" width="35" height="50.5"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAk-hp-YZT">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="35" id="R5o-iL-Pme"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <state key="normal" backgroundImage="whatsapp"/>
+                                                                    <connections>
+                                                                        <action selector="didTapShareButton:" destination="9Tg-ci-Nd3" eventType="touchUpInside" id="ufa-Bf-e3u"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="371" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsU-on-EQd">
+                                                                    <rect key="frame" x="0.0" y="35" width="35" height="15.5"/>
+                                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="11"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltU-qF-W5G">
-                                                            <rect key="frame" x="0.0" y="220" width="38" height="1"/>
+                                                            <rect key="frame" x="0.0" y="266.5" width="35" height="1"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="Pb3-FG-GaG"/>
                                                             </constraints>
@@ -132,7 +165,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAE-sA-LX1">
-                                                            <rect key="frame" x="0.0" y="241" width="38" height="35"/>
+                                                            <rect key="frame" x="0.0" y="287.5" width="35" height="35"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="35" id="m1U-sI-diA"/>
                                                             </constraints>
@@ -141,7 +174,7 @@
                                                         </button>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="38" id="FcF-yJ-CAB"/>
+                                                        <constraint firstAttribute="width" constant="35" id="FcF-yJ-CAB"/>
                                                     </constraints>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YZr-NH-18P">
