@@ -195,6 +195,7 @@
                                         </constraints>
                                         <size key="customSize" width="290" height="524"/>
                                         <connections>
+                                            <outlet property="discoIcon" destination="EAE-sA-LX1" id="NV1-Zk-2Hh"/>
                                             <outlet property="labelAudioTrack" destination="MtY-2H-sHK" id="O6v-D0-bmo"/>
                                             <outlet property="labelCaption" destination="bN5-JQ-zif" id="1ov-8F-Hzs"/>
                                             <outlet property="labelUsername" destination="N8v-ha-qds" id="ZW5-nx-zZv"/>
