@@ -132,12 +132,12 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAE-sA-LX1">
-                                                            <rect key="frame" x="0.0" y="242" width="38" height="33.5"/>
+                                                            <rect key="frame" x="0.0" y="241" width="38" height="35"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="35" id="m1U-sI-diA"/>
                                                             </constraints>
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <state key="normal" backgroundImage="circle.righthalf.fill" catalog="system"/>
+                                                            <state key="normal" backgroundImage="disco"/>
                                                         </button>
                                                     </subviews>
                                                     <constraints>
@@ -632,8 +632,8 @@
         <image name="bitcoinsign.circle.fill" catalog="system" width="128" height="121"/>
         <image name="bookmark" catalog="system" width="112" height="128"/>
         <image name="camera.png" width="37.5" height="25"/>
-        <image name="circle.righthalf.fill" catalog="system" width="128" height="121"/>
         <image name="comment.png" width="24.5" height="25"/>
+        <image name="disco" width="25" height="25"/>
         <image name="error.png" width="615" height="873"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="home.png" width="27.5" height="25"/>
