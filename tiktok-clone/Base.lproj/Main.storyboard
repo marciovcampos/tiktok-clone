@@ -178,25 +178,25 @@
                                                     </constraints>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YZr-NH-18P">
-                                                    <rect key="frame" x="13" y="440" width="142.5" height="66"/>
+                                                    <rect key="frame" x="13" y="440" width="152.5" height="66"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8v-ha-qds">
-                                                            <rect key="frame" x="0.0" y="0.0" width="142.5" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="152.5" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="caption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bN5-JQ-zif">
-                                                            <rect key="frame" x="0.0" y="20.5" width="142.5" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="20.5" width="152.5" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tq8-hj-9hZ">
-                                                            <rect key="frame" x="0.0" y="41" width="142.5" height="25"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Tq8-hj-9hZ">
+                                                            <rect key="frame" x="0.0" y="41" width="152.5" height="25"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music.note" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="52Z-TD-UTq">
-                                                                    <rect key="frame" x="0.0" y="0.5" width="15" height="24"/>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music" translatesAutoresizingMaskIntoConstraints="NO" id="52Z-TD-UTq">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="15" height="25"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="15" id="Fvd-62-hMf"/>
                                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="hrj-2v-Tvq"/>
@@ -204,7 +204,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="audioTrackName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtY-2H-sHK">
-                                                                    <rect key="frame" x="15" y="0.0" width="127.5" height="25"/>
+                                                                    <rect key="frame" x="25" y="0.0" width="127.5" height="25"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -673,7 +673,7 @@
         <image name="home.png" width="27.5" height="25"/>
         <image name="message.fill" catalog="system" width="128" height="113"/>
         <image name="more.png" width="307.20001220703125" height="307.20001220703125"/>
-        <image name="music.note" catalog="system" width="97" height="128"/>
+        <image name="music" width="25" height="25"/>
         <image name="paperplane" catalog="system" width="128" height="121"/>
         <image name="person.badge.plus" catalog="system" width="128" height="116"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
