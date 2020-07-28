@@ -233,22 +233,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DISCOVER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ow-Xr-PPB">
-                                <rect key="frame" x="119" y="89" width="83" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="error.png" translatesAutoresizingMaskIntoConstraints="NO" id="FTs-df-n7W">
+                                <rect key="frame" x="12" y="100" width="296" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Z4s-IC-yDH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNDER" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAs-PM-Lof">
+                                <rect key="frame" x="84" y="250" width="152" height="48"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONSTRUCTION" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jp2-W7-5Uq">
+                                <rect key="frame" x="84" y="276" width="152" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="glU-Cm-BAD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.065930463369999998" green="0.065946869549999995" blue="0.065926887089999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FTs-df-n7W" firstAttribute="leading" secondItem="16P-qL-Tev" secondAttribute="leading" constant="12" id="2KO-zf-ll0"/>
+                            <constraint firstItem="16P-qL-Tev" firstAttribute="trailing" secondItem="WAs-PM-Lof" secondAttribute="trailing" constant="84" id="5pg-hu-eQw"/>
+                            <constraint firstItem="16P-qL-Tev" firstAttribute="trailing" secondItem="FTs-df-n7W" secondAttribute="trailing" constant="12" id="Ged-7h-fps"/>
+                            <constraint firstItem="jp2-W7-5Uq" firstAttribute="leading" secondItem="16P-qL-Tev" secondAttribute="leading" constant="84" id="Kr6-Rr-jSc"/>
+                            <constraint firstItem="WAs-PM-Lof" firstAttribute="top" secondItem="FTs-df-n7W" secondAttribute="bottom" id="TXE-wm-P5g"/>
+                            <constraint firstItem="jp2-W7-5Uq" firstAttribute="top" secondItem="FTs-df-n7W" secondAttribute="bottom" constant="26" id="dDV-6A-Q7p"/>
+                            <constraint firstItem="WAs-PM-Lof" firstAttribute="leading" secondItem="16P-qL-Tev" secondAttribute="leading" constant="84" id="rda-6K-KZL"/>
+                            <constraint firstItem="16P-qL-Tev" firstAttribute="trailing" secondItem="jp2-W7-5Uq" secondAttribute="trailing" constant="84" id="thP-bJ-7rl"/>
+                            <constraint firstItem="FTs-df-n7W" firstAttribute="top" secondItem="16P-qL-Tev" secondAttribute="top" constant="100" id="yB9-HJ-U1k"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="16P-qL-Tev"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Discover" image="search.png" id="TE8-g5-sG5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4gS-Bl-TLp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="281" y="-1109"/>
+            <point key="canvasLocation" x="279.375" y="-1109.1549295774648"/>
         </scene>
         <!--Me-->
         <scene sceneID="c8L-wM-xf7">
@@ -576,8 +601,8 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MESSAGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqj-Un-9em">
-                                <rect key="frame" x="117" y="265" width="86.5" height="21.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <rect key="frame" x="116" y="265" width="88" height="25"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
