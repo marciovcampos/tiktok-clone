@@ -40,6 +40,10 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         return CGSize(width: cvRect.width, height: view.safeAreaLayoutGuide.layoutFrame.size.height)
     }
     
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
     // Change Status Bar Color
     
     override func viewDidAppear(_ animated: Bool) {
