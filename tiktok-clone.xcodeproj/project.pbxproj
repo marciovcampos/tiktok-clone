@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		800DA1F324D1ADBC00EF1585 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800DA1F224D1ADBC00EF1585 /* ProfileViewController.swift */; };
+		800DA1F624D1AFE800EF1585 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800DA1F524D1AFE800EF1585 /* ProfileCollectionViewCell.swift */; };
 		8017A6A824C5EB0A00F83011 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017A6A724C5EB0A00F83011 /* AppDelegate.swift */; };
 		8017A6AA24C5EB0A00F83011 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017A6A924C5EB0A00F83011 /* SceneDelegate.swift */; };
 		8017A6AC24C5EB0A00F83011 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017A6AB24C5EB0A00F83011 /* ViewController.swift */; };
@@ -49,6 +51,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		800DA1F224D1ADBC00EF1585 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		800DA1F524D1AFE800EF1585 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		8017A6A424C5EB0A00F83011 /* TikTok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikTok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8017A6A724C5EB0A00F83011 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8017A6A924C5EB0A00F83011 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +107,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		800DA1F024D1AD8100EF1585 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				800DA1F424D1AFBD00EF1585 /* View */,
+				800DA1F124D1ADA000EF1585 /* Controller */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		800DA1F124D1ADA000EF1585 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				800DA1F224D1ADBC00EF1585 /* ProfileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		800DA1F424D1AFBD00EF1585 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				800DA1F524D1AFE800EF1585 /* ProfileCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8017A69B24C5EB0900F83011 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +156,7 @@
 				8017A6BE24C6461A00F83011 /* Home */,
 				8045BBAA24CF152B0033D4D1 /* Inbox */,
 				80F7338324CB1F670095AF67 /* Camera */,
+				800DA1F024D1AD8100EF1585 /* Profile */,
 				8017A6BB24C6399C00F83011 /* Assets */,
 				8017A6A724C5EB0A00F83011 /* AppDelegate.swift */,
 				8017A6A924C5EB0A00F83011 /* SceneDelegate.swift */,
@@ -375,6 +405,8 @@
 				8017A6C724C64A8A00F83011 /* Video.swift in Sources */,
 				80F7338624CB1F950095AF67 /* CameraViewController.swift in Sources */,
 				8017A6C224C6467500F83011 /* HomeCollectionViewCell.swift in Sources */,
+				800DA1F624D1AFE800EF1585 /* ProfileCollectionViewCell.swift in Sources */,
+				800DA1F324D1ADBC00EF1585 /* ProfileViewController.swift in Sources */,
 				8045BBB224CF279D0033D4D1 /* Activity.swift in Sources */,
 				8017A6AA24C5EB0A00F83011 /* SceneDelegate.swift in Sources */,
 			);
