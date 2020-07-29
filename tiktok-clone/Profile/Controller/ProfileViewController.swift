@@ -11,6 +11,7 @@ import UIKit
 class ProfileViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var profileCollectionView: UICollectionView!
+    @IBOutlet weak var profileImageView: UIImageView!
     
     let allVideoList: Array<Video> = VideoDAO().returnAllVideos()
     var videoList: Array<Video> = []
@@ -19,6 +20,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         super.viewDidLoad()
         profileCollectionView.dataSource = self
         profileCollectionView.delegate = self
+        makeRounded()
         videoList = allVideoList
     }
     
@@ -35,6 +37,13 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.bounds.width/3-6.8, height:150)
+    }
+    
+    private func makeRounded() {
+        profileImageView?.layer.cornerRadius = (profileImageView?.frame.size.width ?? 0.0) / 2
+        profileImageView?.clipsToBounds = true
+        profileImageView?.layer.borderWidth = 2.0
+        profileImageView?.layer.borderColor = UIColor.lightGray.cgColor
     }
     
  

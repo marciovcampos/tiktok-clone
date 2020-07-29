@@ -13,6 +13,7 @@ class ProfileCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var videoImageView: UIImageView!
     
+    
     private var video: Video?
     
     public func configure(with video: Video){

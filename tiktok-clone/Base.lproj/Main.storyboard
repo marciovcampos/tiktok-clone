@@ -377,27 +377,52 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZhD-XQ-atF">
-                                        <rect key="frame" x="0.0" y="31" width="320" height="120"/>
+                                        <rect key="frame" x="0.0" y="31" width="320" height="139.5"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile1.png" translatesAutoresizingMaskIntoConstraints="NO" id="LoB-QA-fZs">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="100" id="oMw-5X-Pio"/>
-                                                </constraints>
-                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="B0a-2F-RfB">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pR9-Nj-u7F">
+                                                        <rect key="frame" x="0.0" y="0.0" width="99.5" height="120"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Br3-MK-0Wk">
+                                                        <rect key="frame" x="110.5" y="0.0" width="99" height="120"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile1.png" translatesAutoresizingMaskIntoConstraints="NO" id="LoB-QA-fZs">
+                                                                <rect key="frame" x="10" y="10" width="100" height="100"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="100" id="MGJ-G4-77F"/>
+                                                                    <constraint firstAttribute="width" constant="100" id="nYq-pP-TyH"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="LoB-QA-fZs" secondAttribute="bottom" constant="10" id="Hd8-rY-iy9"/>
+                                                            <constraint firstItem="LoB-QA-fZs" firstAttribute="centerX" secondItem="Br3-MK-0Wk" secondAttribute="centerX" id="S8Y-71-O5U"/>
+                                                            <constraint firstItem="LoB-QA-fZs" firstAttribute="top" secondItem="Br3-MK-0Wk" secondAttribute="top" constant="10" id="S9q-c1-TDK"/>
+                                                            <constraint firstItem="LoB-QA-fZs" firstAttribute="leading" secondItem="Br3-MK-0Wk" secondAttribute="leading" constant="10" id="dKa-CO-bMB"/>
+                                                            <constraint firstAttribute="trailing" secondItem="LoB-QA-fZs" secondAttribute="trailing" constant="10" id="pZb-7o-5tT"/>
+                                                            <constraint firstItem="LoB-QA-fZs" firstAttribute="centerY" secondItem="Br3-MK-0Wk" secondAttribute="centerY" id="wGO-iL-lay"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJ6-cT-xXg">
+                                                        <rect key="frame" x="220.5" y="0.0" width="99.5" height="120"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@veronablair" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kle-38-Dk5">
-                                                <rect key="frame" x="0.0" y="100" width="320" height="20"/>
+                                                <rect key="frame" x="0.0" y="120" width="320" height="19.5"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="120" id="00t-Bj-Pts"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="v2J-8C-IfC">
-                                        <rect key="frame" x="0.0" y="156" width="320" height="40"/>
+                                        <rect key="frame" x="0.0" y="175.5" width="320" height="40"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="p7K-Ay-ey0">
                                                 <rect key="frame" x="0.0" y="2" width="106.5" height="36"/>
@@ -456,33 +481,33 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="S9N-sW-6pM">
-                                        <rect key="frame" x="0.0" y="201" width="320" height="30"/>
+                                        <rect key="frame" x="0.0" y="220.5" width="320" height="20"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIm-Dj-U5u">
-                                                <rect key="frame" x="0.0" y="0.0" width="297.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="297.5" height="20"/>
                                                 <state key="normal" title="Edit profile"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZQ-Ya-XFy">
-                                                <rect key="frame" x="302.5" y="0.0" width="17.5" height="30"/>
+                                                <rect key="frame" x="302.5" y="0.0" width="17.5" height="20"/>
                                                 <state key="normal" backgroundImage="bookmark" catalog="system"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to add bio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcE-eF-cDo">
-                                        <rect key="frame" x="0.0" y="236" width="320" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="245.5" width="320" height="16.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
                                         <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B4m-Tz-cBN">
-                                        <rect key="frame" x="0.0" y="257.5" width="320" height="1"/>
+                                        <rect key="frame" x="0.0" y="267" width="320" height="1"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="s1U-kU-3QB"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5ya-en-NOX">
-                                        <rect key="frame" x="0.0" y="263.5" width="320" height="25"/>
+                                        <rect key="frame" x="0.0" y="273" width="320" height="25"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8MT-pp-uyu">
                                                 <rect key="frame" x="0.0" y="1" width="106.5" height="22.5"/>
@@ -502,7 +527,7 @@
                                         </constraints>
                                     </stackView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WtW-Xl-eHv">
-                                        <rect key="frame" x="0.0" y="293.5" width="320" height="215.5"/>
+                                        <rect key="frame" x="0.0" y="303" width="320" height="206"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="V6k-Kq-HuA">
                                             <size key="itemSize" width="128" height="128"/>
@@ -547,6 +572,7 @@
                     <tabBarItem key="tabBarItem" title="Me" image="profile.png" id="Jnd-90-ifj"/>
                     <connections>
                         <outlet property="profileCollectionView" destination="WtW-Xl-eHv" id="ypm-5l-2HA"/>
+                        <outlet property="profileImageView" destination="LoB-QA-fZs" id="9YA-v1-nDH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qoM-au-hOW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
