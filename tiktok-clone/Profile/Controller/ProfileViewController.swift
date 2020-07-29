@@ -12,6 +12,8 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     
     @IBOutlet weak var profileCollectionView: UICollectionView!
     @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var buttonEditProfile: UIButton!
+    @IBOutlet weak var buttonBookmark: UIButton!
     
     let allVideoList: Array<Video> = VideoDAO().returnAllVideos()
     var videoList: Array<Video> = []
@@ -21,6 +23,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         profileCollectionView.dataSource = self
         profileCollectionView.delegate = self
         makeRounded()
+        styleButtons()
         videoList = allVideoList
     }
     
@@ -45,6 +48,14 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         profileImageView?.layer.borderWidth = 2.0
         profileImageView?.layer.borderColor = UIColor.lightGray.cgColor
     }
+    
+    private func styleButtons(){
+        buttonEditProfile.layer.borderWidth = 0.8
+        buttonEditProfile.layer.borderColor = UIColor.lightGray.cgColor
+        buttonBookmark.layer.borderWidth = 0.8
+        buttonBookmark.layer.borderColor = UIColor.lightGray.cgColor
+    }
+    
     
  
 

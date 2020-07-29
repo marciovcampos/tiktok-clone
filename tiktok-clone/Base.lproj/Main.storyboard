@@ -481,33 +481,38 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="S9N-sW-6pM">
-                                        <rect key="frame" x="0.0" y="220.5" width="320" height="20"/>
+                                        <rect key="frame" x="0.0" y="220.5" width="320" height="28"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIm-Dj-U5u">
-                                                <rect key="frame" x="0.0" y="0.0" width="297.5" height="20"/>
-                                                <state key="normal" title="Edit profile"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="297.5" height="28"/>
+                                                <state key="normal" title="Edit profile">
+                                                    <color key="titleColor" red="0.065930463369999998" green="0.065946869549999995" blue="0.065926887089999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZQ-Ya-XFy">
-                                                <rect key="frame" x="302.5" y="0.0" width="17.5" height="20"/>
-                                                <state key="normal" backgroundImage="bookmark" catalog="system"/>
+                                                <rect key="frame" x="302.5" y="0.0" width="17.5" height="28"/>
+                                                <color key="tintColor" red="0.065930463369999998" green="0.065946869549999995" blue="0.065926887089999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" backgroundImage="bookmark" catalog="system">
+                                                    <color key="titleColor" red="0.065930463369999998" green="0.065946869549999995" blue="0.065926887089999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to add bio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcE-eF-cDo">
-                                        <rect key="frame" x="0.0" y="245.5" width="320" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="253.5" width="320" height="16.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
                                         <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B4m-Tz-cBN">
-                                        <rect key="frame" x="0.0" y="267" width="320" height="1"/>
+                                        <rect key="frame" x="0.0" y="275" width="320" height="1"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="s1U-kU-3QB"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5ya-en-NOX">
-                                        <rect key="frame" x="0.0" y="273" width="320" height="25"/>
+                                        <rect key="frame" x="0.0" y="281" width="320" height="25"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8MT-pp-uyu">
                                                 <rect key="frame" x="0.0" y="1" width="106.5" height="22.5"/>
@@ -527,7 +532,7 @@
                                         </constraints>
                                     </stackView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WtW-Xl-eHv">
-                                        <rect key="frame" x="0.0" y="303" width="320" height="206"/>
+                                        <rect key="frame" x="0.0" y="311" width="320" height="198"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="V6k-Kq-HuA">
                                             <size key="itemSize" width="128" height="128"/>
@@ -571,6 +576,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Me" image="profile.png" id="Jnd-90-ifj"/>
                     <connections>
+                        <outlet property="buttonBookmark" destination="eZQ-Ya-XFy" id="RWM-SF-jFg"/>
+                        <outlet property="buttonEditProfile" destination="kIm-Dj-U5u" id="jQE-2w-pMz"/>
                         <outlet property="profileCollectionView" destination="WtW-Xl-eHv" id="ypm-5l-2HA"/>
                         <outlet property="profileImageView" destination="LoB-QA-fZs" id="9YA-v1-nDH"/>
                     </connections>
