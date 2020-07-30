@@ -39,7 +39,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.bounds.width/3-6.8, height:150)
+        return CGSize(width: collectionView.bounds.width/3-1, height:160)
     }
     
     private func makeRounded() {
