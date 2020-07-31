@@ -5,16 +5,4 @@ TikTok Clone
 
 A clone of the TikTok UI using Swift
 
-## Screen Shots
-
-### Home Page
-
-<img src="https://github.com/marciovcampos/tiktok-clone/blob/master/docs/home.png"/>
-
-### Discovery
-
-### Camera
-
-### Inbox
-
-### Me
+<img src="https://github.com/marciovcampos/tiktok-clone/blob/master/docs/tiktok.gif"/>
